@@ -1,0 +1,29 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'Rakefile'
+    - '**/*.rake'
+  SuggestExtensions: false
+  TargetRubyVersion: 3.2
+
+Metrics/AbcSize:
+  CountRepeatedAttributes: false
+
+Metrics/BlockLength:
+  Exclude:
+    - '**/*_spec.rb'
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Layout/LineLength:
+  Max: 80
